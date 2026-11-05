@@ -1,0 +1,18 @@
+{
+  "source": "https://github.com/kubernetes/community.git",
+  "commit": "812ca4f10971819ffc35fb17a9eb32a04dbe72e0",
+  "commit_date": "2026-11-04",
+  "license": "Apache-2.0",
+  "excluded_dirs": [
+    "archive",
+    "elections",
+    "events"
+  ],
+  "excluded_patterns": [
+    "meeting-notes",
+    "minutes",
+    "README-[a-z]{2}\\.md$"
+  ],
+  "docs_total": 976,
+  "docs_selected": 539
+}

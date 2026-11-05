@@ -1,0 +1,19 @@
+corpus:
+  repo_url: https://github.com/kubernetes/community.git
+  raw_dir: data/raw/community
+  manifest_path: data/manifest.json
+  exclude_dirs: [archive, elections, events]
+  exclude_patterns: [meeting-notes, minutes, 'README-[a-z]{2}\.md$']
+
+cleaning:
+  output_path: data/processed/docs.jsonl
+  sample_path: data/processed/sample_10.txt
+  min_chars: 100
+  sample_size: 10
+  seed: 42
+
+chunking:
+  input_path: data/processed/docs.jsonl
+  output_path: data/processed/chunks.jsonl
+  chunk_size: 200
+  overlap: 30

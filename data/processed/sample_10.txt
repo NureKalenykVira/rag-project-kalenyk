@@ -1,0 +1,421 @@
+===== contributors/devel/sig-release/getting-builds.md (1158 chars) =====
+# Getting Kubernetes Builds
+
+- Version markers
+- Using `hack/get-build.sh`
+
+## Version markers
+
+Version markers are text files which act as sort of a public API for accessing
+Kubernetes builds.
+
+They are artifacts of a successful Kubernetes build which are stored in a
+Google Cloud Storage bucket alongside the builds they make reference to.
+
+You can read more about version markers here.
+
+## Using `hack/get-build.sh`
+
+You can use hack/get-build.sh
+to get a build or to use as a reference on how to get the most recent builds
+with curl.
+
+With `get-build.sh` you can grab the most recent stable build, the
+most recent release candidate, or the most recent build to pass our CI and GCE
+e2e tests (essentially a nightly build).
+
+Run `./hack/get-build.sh -h` for its usage.
+
+To get a build at a specific version (v1.18.3) use:
+
+```shell
+./hack/get-build.sh v1.18.3
+```
+
+To get the latest stable release:
+
+```shell
+./hack/get-build.sh release/stable
+```
+
+Use the "-v" option to print the version number of a build without retrieving
+it.
+
+For example, the following prints the version number for the latest ci
+build:
+
+```shell
+./hack/get-build.sh -v ci/latest
+```
+
+===== communication/contributor-comms/automation/social-media-automation.md (2659 chars) =====
+# Social Media Automation
+
+Contributor Comms manages the social media accounts for the Kubernetes community.
+We use automation to alleviate the workload of posting blog posts, LWKD, and CVEs
+to social media. This document describes the automation process in place to
+push the various posts out to the social media accounts for the project.
+
+## Overview
+
+New posts published to any of the project's RSS feeds are automatically queued
+and published to six social media accounts. The pipeline is fully automated via
+Zapier and Buffer — no manual posting is required.
+
+## Pipeline
+
+```mermaid
+flowchart TB
+    subgraph feeds["RSS Feeds"]
+        direction LR
+        f1["k8s.io"]
+        f2["k8s.dev"]
+        f3["etcd.io"]
+        f4["LWKD"]
+        f5["CVEs"]
+    end
+
+    subgraph zaps["Zapier — one zap per network"]
+        direction LR
+        z1["Mastodon zap"]
+        z2["LinkedIn zap"]
+        z3["K8s.io Twitter zap"]
+        z4["K8s.io Bluesky zap"]
+        z5["K8s Contrib Twitter zap"]
+        z6["K8s Contrib Bluesky zap"]
+    end
+
+    subgraph buffer["Buffer queues"]
+        direction LR
+        b1["Mastodon queue"]
+        b2["LinkedIn queue"]
+        b3["K8s.io Twitter queue"]
+        b4["K8s.io Bluesky queue"]
+        b5["K8s Contrib Twitter queue"]
+        b6["K8s Contrib Bluesky queue"]
+    end
+
+    subgraph social["Social media accounts"]
+        direction LR
+        s1["Mastodon"]
+        s2["LinkedIn"]
+        s3["K8s.io Twitter"]
+        s4["K8s.io Bluesky"]
+        s5["
+
+===== sig-cloud-provider/annual-report-2020.md (5504 chars) =====
+# 2020 - SIG Cloud Provider - Community Meeting Annual Reports
+---
+## Operational
+**How are you doing with operational tasks in sig-governance.md?**
+
+**Is your README accurate? have a CONTRIBUTING.md file?**
+
+Our README is accurate but we do not currently have a contributing.md file.
+
+**All subprojects correctly mapped and listed in sigs.yaml?**
+
+I believe so.
+
+**What’s your meeting culture? Large/small, active/quiet, learnings? Meeting notes up to date? Are you keeping recordings up to date/trends in community members watching recordings?**
+
+Our meetings tends to be small and quiet. We try to keep the meeting notes upto date during the meeting.
+
+**How does the group get updates, reports, or feedback from subprojects? Are there any springing up or being retired? Are OWNERS files up to date in these areas?**
+_Same question as above but for working groups._
+
+We go over the sub project updates during our primary biweekly meeting.
+I believe the OWNERS files are all upto date.
+
+**When was your last monthly community-wide update? (provide link to deck and/or recording)**
+
+---
+## Membership
+**Are all listed SIG leaders (chairs, tech leads, and subproject owners) active?**
+
+I believe so.
+
+**How do you measure membership? By mailing list members, OWNERs, or something else?**
+
+1. We look at the number of people attending our meetings, messaing on our slack channels and contributing to our repos.
+1. We look at the number of cloud providers who have people doing the above.
+
+**How does th
+
+===== sig-architecture/README.md (7426 chars) =====
+# Architecture Special Interest Group
+
+The Architecture SIG maintains and evolves the design principles of Kubernetes, and provides a consistent body of expertise necessary to ensure architectural consistency over time.
+
+The charter defines the scope and governance of the Architecture Special Interest Group.
+
+## Meetings
+*Joining the mailing list for the group will typically add invites for the following meetings to your calendar.*
+* AI Conformance Meeting (calendar) : Thursdays at 10:00 PT (Pacific Time) (biweekly). Convert to your timezone.
+  * Meeting notes and Agenda.
+* Enhancements Subproject Meeting: Thursdays at 10:00 PT (Pacific Time) (biweekly). Convert to your timezone.
+  * Meeting notes and Agenda.
+  * Meeting recordings.
+* Production Readiness Office Hours: Wednesdays at 12:00 PT (Pacific Time) (biweekly). Convert to your timezone.
+  * Meeting notes and Agenda.
+  * Meeting recordings.
+* Regular SIG Meeting: Thursdays at 11:00 PT (Pacific Time) (biweekly). Convert to your timezone.
+  * Meeting notes and Agenda.
+  * Meeting recordings.
+* code organization Office Hours: Thursdays at 14:00 PT (Pacific Time) (biweekly). Convert to your timezone.
+  * Meeting notes and Agenda.
+  * Meeting recordings.
+* conformance office Hours: Wednesdays at 18:00 UTC (First Wednesday of the month). Convert to your timezone.
+  * Meeting notes and Agenda.
+  * Meeting recordings.
+
+## Leadership
+
+### Chairs
+The Chairs of the SIG run operations and processes governing the SIG.
+
+* Derek Carr 
+
+===== sig-apps/annual-report-2024.md (2113 chars) =====
+# 2024 Annual Report: SIG Apps
+
+## Current initiatives and Project Health
+
+1. What work did the SIG do this year that should be highlighted?
+
+  - Mailing list has been migrated to kubernetes managed account.
+  - Sponsored the creation of WG Serving.
+  - We continued cleaning up the backlog of started enhancements.
+
+2. Are there any areas and/or subprojects that your group needs help with (e.g. fewer than 2 active OWNERS)?
+
+None.
+
+3. Did you have community-wide updates in 2024 (e.g. KubeCon talks)?
+
+  Yes. SIG-Apps provided the following updates:
+  - KubeCon EU 2024
+  - KubeCon NA 2024
+
+4. KEP work in 2024 (v1.30, v1.31, v1.32):
+  - Alpha
+    - 4443 - More granular Job failure reasons for PodFailurePolicy - v1.31
+
+  - Beta
+    - 3998 - Job success/completion policy - v1.31
+    - 4368 - Job API managed-by label - v1.32
+
+  - Stable
+    - 1847 - Auto delete PVCs created by StatefulSet - v1.32
+    - 2185 - Random Pod Selection on ReplicaSet Downscale - v1.31
+    - 3017 - Pod Healthy Policy for PDB - v1.31
+    - 3329 - Retriable and non-retriable Pod failures for Jobs - v1.31
+    - 3335 - StatefulSet Slice - v1.31
+    - 3715 - Elastic Indexed Job - v1.31
+    - 4017 - Pod Index Label - v1.32
+    - 4026 - Add job creation timestamp to job annotations - v1.32
+
+## Subprojects
+
+**New in 2024:**
+  - kjob
+**Continuing:**
+  - application
+  - examples
+  - execution-hook
+  - kompose
+  - workloads-api
+
+## Working groups
+
+**New in 2024:**
+ - Serving
+**Continuing:**
+ - Batch
+ - Data Protection
+
+
+===== contributors/guide/issue-triage.md (17639 chars) =====
+## Table of Contents
+- Scope
+- What Is Triaging?
+- Why Is Triaging Beneficial?
+- How to Triage: A Step-by-Step Flow
+   - Triage-Related Tools
+      - Permissions and the Bot
+      - Triage Party
+      - GitHub Project Boards
+      - DevStats
+   - Process Pointers and Advice from SIGs
+      - Running a Triage Meeting: Tips from api-machinery
+      - Triage Guide by cluster-lifecycle
+ - Step One: Review Newly Created Open Issues
+   - Conducting Searches
+ - Step Two: Triage Issues by Type
+   - Support Requests
+   - Abandoned or Wrongly Placed Issues
+   - Needs More Information
+   - Bugs
+   - Help Wanted/Good First Issues
+   - Kind Labels
+ - Step Three: Define Priority
+ - Step Four: Find and Set the Right SIG(s) to Own an Issue
+   - Self-Assigning
+ - Step Five: Follow Up
+   - If No PR Is Created for an Issue Within the Current Release Cycle
+   - If a SIG Label Is Assigned, but No Action Is Taken Within 30 Days
+   - If an Issue Has No Activity After 90 Days
+ - Further Notes
+   - Support Requests: Channels
+   - User Support Response: Example
+
+## Scope
+
+These guidelines serve as a primary document for triaging incoming issues to Kubernetes. SIGs and projects are encouraged to use this guidance as a starting point, and customize to address specific triaging needs.
+
+**Note:** These guidelines only apply to the Kubernetes repository. Usage for other Kubernetes-related GitHub repositories is TBD.
+
+## What Is Triaging?
+
+Issue triage is a process by which a SIG intakes and reviews new Git
+
+===== contributors/devel/sig-node/kubelet-cri-networking.md (2982 chars) =====
+# Container Runtime Interface (CRI) Networking Specifications
+
+## Introduction
+Container Runtime Interface (CRI) is
+an ongoing project to allow container
+runtimes to integrate with kubernetes via a newly-defined API. This document
+specifies the network requirements for container runtime
+interface (CRI). CRI networking requirements expand upon kubernetes pod
+networking requirements. This document does not specify requirements
+from upper layers of kubernetes network stack, such as `Service`. More
+background on k8s networking could be found
+here.
+
+## Requirements
+1. Kubelet expects the runtime shim to manage pod's network life cycle. Pod
+networking should be handled accordingly along with pod sandbox operations.
+   * `RunPodSandbox` must set up pod's network. This includes, but is not limited
+to allocating a pod IP, configuring the pod's network interfaces and default
+network route. Kubelet expects the pod sandbox to have an IP which is
+routable within the k8s cluster, if `RunPodSandbox` returns successfully.
+`RunPodSandbox` must return an error if it fails to set up the pod's network.
+If the pod's network has already been set up, `RunPodSandbox` must skip
+network setup and proceed.
+   * `StopPodSandbox` must tear down the pod's network. The runtime shim
+must return error on network tear down failure. If pod's network has
+already been torn down, `StopPodSandbox` must skip network tear down and proceed.
+   * `RemovePodSandbox` may tear down pod's network, if the networking has
+no
+
+===== contributors/devel/sig-architecture/vendor.md (8245 chars) =====
+**Note**: This document only applies to Kubernetes development after 1.14.x.
+See previous godep documentation for working with dependencies for Kubernetes 1.14.x and earlier.
+
+# Using go modules to manage dependencies
+
+This document is intended to show a way for managing `vendor/` tree dependencies
+in Kubernetes. If you do not need to manage vendored dependencies, you probably
+do not need to read this.
+
+## Background
+
+Go modules allow recording desired versions of dependencies, and allow the main
+module in a build to pin dependencies to specific versions.
+
+This doc will focus on predictability and reproducibility.
+
+## Justifications for an update
+
+Before you update a dependency, take a moment to consider why it should be
+updated. Valid reasons include:
+ 1. We need new functionality that is in a later version.
+ 2. New or improved APIs in the dependency significantly improve Kubernetes code.
+ 3. Bugs were fixed that impact Kubernetes.
+ 4. Security issues were fixed even if they don't impact Kubernetes yet.
+ 5. Performance, scale, or efficiency was meaningfully improved.
+ 6. We need dependency A and there is a transitive dependency B.
+ 7. Kubernetes has an older level of a dependency that is precluding being able
+to work with other projects in the ecosystem.
+
+## Theory of operation
+
+The `go.mod` file in the root of `k8s.io/kubernetes` describes dependencies using two directives:
+
+* `require` directives list the preferred version of dependencies (this is auto-updated by go toolin
+
+===== sig-scalability/slos/dns_latency.md (2849 chars) =====
+## In-cluster dns latency SLIs/SLOs details
+
+### Definition
+
+| Status | SLI | SLO |
+| --- | --- | --- |
+| __WIP__ | In-cluster dns latency from a single prober pod, measured as latency of per second DNS lookup1 for "null service" from that pod, measured as 99th percentile over last 5 minutes. | In default Kubernetes installataion with RTT between nodes <= Y, 99th percentile of (99th percentile over all prober pods) per cluster-day <= X |
+
+\[1\] In fact two DNS lookups: (1) to nameserver IP from
+/etc/resolv.conf (2) to kube-system/kube-dns service IP and track them as two
+separate SLIs.
+
+### User stories
+- As a user of vanilla Kubernetes, I want some guarantee how fast my in-cluster
+DNS requests are resolved
+
+### Other notes
+- We obviously can't give any guarantee in a general case, because cluster
+administrators may configure cluster as they want.
+- As a result, we define the SLI to be very generic (no matter how your cluster
+is set up), but we provide SLO only for default installations with an additional
+requirement that low-level RTT between nodes is lower than Y.
+- DNS latency is one of the most crucial aspects from the point of view
+of application performance, especially in microservices world. As a result, to
+meet user expectations, we need to provide some guarantees arount that.
+- We are introducing two SLIs (for two IP addresses) to enable measuring the
+impact of node-local caching.
+
+### Caveats
+- The SLI is formulated for a prober pods, even though users are mostly
+in
+
+===== communication/contributor-comms/blogging-resources/README.md (1360 chars) =====
+# Blogging resources
+
+Contributor Comms depends on great storytelling to get the message out about our amazing community. We help Kubernetes contributors hear the latest news in the most entertaining ways. This can be done through words and visuals.
+
+We have collected some information to get anyone started. If you're looking to get started blogging on the kubernetes.dev blog, this page contains a list of resources available to help you be successful.
+
+## Blog guidelines
+
+Information on the type of content, possible publication targets, and
+a description of the editing and publishing process.
+
+## SIG Spotlight topics
+
+Ready to use topics to use in the SIG Spotlight series.
+
+## SIG Spotlight example questions
+
+Examples of the questions used in the SIG Windows spotlight.
+
+## SIG Spotlight blog process
+
+A step-by-step description on how to do a SIG Spotlight blog article.
+
+## SIG Spotlight series: covered SIGs
+
+List of already covered SIGs, with a link to the blog articles.
+
+## Multichannel communications
+
+A guide to facilitate identification of the correct communication
+channel, both for interacting with the Kubernetes community, and also
+for outbound communication.
+
+## Social media guidelines
+
+Guidelines for social media, currently focused on the
+@K8sContributors Twitter account
+and the @K8sContributors
+Mastodon account, both managed by us.
+
