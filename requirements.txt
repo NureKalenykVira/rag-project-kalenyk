@@ -1,1 +1,4 @@
 pyyaml
+sentence-transformers
+numpy
+chromadb

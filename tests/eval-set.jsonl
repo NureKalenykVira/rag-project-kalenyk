@@ -1,0 +1,20 @@
+{"id": "q01", "query": "How do I find a good first issue to work on?", "relevant_chunk_ids": ["contributors/guide/first-contribution.md#0", "contributors/guide/first-contribution.md#1"]}
+{"id": "q02", "query": "What do the lgtm and approved labels mean?", "relevant_chunk_ids": ["contributors/guide/owners.md#6", "contributors/guide/owners.md#7", "contributors/guide/pull-requests.md#33"]}
+{"id": "q03", "query": "How do I become a Kubernetes org member?", "relevant_chunk_ids": ["community-membership.md#1", "community-membership.md#2", "community-membership.md#3"]}
+{"id": "q04", "query": "Which SIG is responsible for networking?", "relevant_chunk_ids": ["governance.md#3", "contributors/guide/first-contribution.md#3"]}
+{"id": "q05", "query": "My PR has been open for two weeks, who should I ping?", "relevant_chunk_ids": ["contributors/guide/contributor-cheatsheet/README.md#6", "contributors/guide/pull-requests.md#4"]}
+{"id": "q06", "query": "How do I report a Code of Conduct violation?", "relevant_chunk_ids": ["code-of-conduct.md#0", "committee-code-of-conduct/README.md#1", "committee-code-of-conduct/incident-process.md#1"]}
+{"id": "q07", "query": "Do I need to sign anything before my first pull request?", "relevant_chunk_ids": ["CLA.md#0", "CLA.md#1"]}
+{"id": "q08", "query": "How do I rerun tests that failed on my PR?", "relevant_chunk_ids": ["contributors/devel/automation.md#1", "contributors/guide/contributor-cheatsheet/README.md#8", "contributors/guide/pull-requests.md#4"]}
+{"id": "q09", "query": "Why don't tests run automatically on my pull request?", "relevant_chunk_ids": ["contributors/devel/sig-testing/testing.md#5", "contributors/guide/pull-requests.md#32", "contributors/guide/pull-requests.md#35"]}
+{"id": "q10", "query": "Where should I report a security vulnerability?", "relevant_chunk_ids": ["contributors/guide/security.md#1", "contributors/guide/contributing.md#6"]}
+{"id": "q11", "query": "How do I squash my commits before merging?", "relevant_chunk_ids": ["contributors/guide/contributor-cheatsheet/README.md#10", "contributors/guide/contributor-cheatsheet/README.md#11", "contributors/guide/github-workflow.md#3", "contributors/guide/github-workflow.md#4", "contributors/guide/github-workflow.md#5"]}
+{"id": "q12", "query": "What should a good commit message look like?", "relevant_chunk_ids": ["contributors/guide/pull-requests.md#19", "contributors/guide/pull-requests.md#20", "contributors/guide/pull-requests.md#22"]}
+{"id": "q13", "query": "What is an OWNERS file?", "relevant_chunk_ids": ["contributors/guide/owners.md#0", "contributors/guide/owners.md#1"]}
+{"id": "q14", "query": "What are the requirements to become a reviewer?", "relevant_chunk_ids": ["community-membership.md#5", "community-membership.md#6"]}
+{"id": "q15", "query": "What is a KEP and when do I need one?", "relevant_chunk_ids": ["contributors/guide/pull-requests.md#7", "contributors/guide/pull-requests.md#8"]}
+{"id": "q16", "query": "How do I stop my PR from being merged too early?", "relevant_chunk_ids": ["contributors/guide/pull-requests.md#2", "contributors/guide/contributor-cheatsheet/README.md#6"]}
+{"id": "q17", "query": "How do I get my fix into an older Kubernetes release?", "relevant_chunk_ids": ["contributors/devel/sig-release/cherry-picks.md#0", "contributors/devel/sig-release/cherry-picks.md#3", "contributors/devel/sig-node/cherry-picks.md#0"]}
+{"id": "q18", "query": "What rules should I follow in the Kubernetes Slack?", "relevant_chunk_ids": ["communication/slack-guidelines.md#0", "communication/slack-guidelines.md#2", "communication/slack-guidelines.md#3"]}
+{"id": "q19", "query": "Are there mentoring programs for new contributors?", "relevant_chunk_ids": ["CONTRIBUTING.md#0", "contributors/guide/README.md#3", "mentoring/processes/mentor-guide.md#4", "mentoring/processes/mentor-guide.md#6"]}
+{"id": "q20", "query": "How do I label an issue as a bug?", "relevant_chunk_ids": ["sig-scheduling/CONTRIBUTING.md#0", "sig-scheduling/CONTRIBUTING.md#1", "contributors/devel/sig-node/triage.md#1", "contributors/devel/sig-release/release.md#11"]}

@@ -1,0 +1,363 @@
+{
+  "name": "title-ef100",
+  "recall@5": 0.4,
+  "recall@10": 0.55,
+  "embedding": {
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "chunks_path": "data/processed/chunks.jsonl",
+    "output_dir": "data/embeddings",
+    "batch_size": 64,
+    "max_seq_length": 256,
+    "add_title": true
+  },
+  "index": {
+    "chunks_path": "data/processed/chunks.jsonl",
+    "embeddings_dir": "data/embeddings",
+    "path": "data/index/chroma",
+    "collection": "k8s_community",
+    "space": "cosine",
+    "ef_search": 100
+  },
+  "results": [
+    {
+      "id": "q01",
+      "query": "How do I find a good first issue to work on?",
+      "rank": null,
+      "found_ids": [
+        "contributors/guide/help-wanted.md#2",
+        "sig-cli/CONTRIBUTING.md#4",
+        "contributors/guide/help-wanted.md#5",
+        "sig-cloud-provider/CONTRIBUTING.md#2",
+        "sig-contributor-experience/triage-team/triage.md#2",
+        "contributors/guide/help-wanted.md#4",
+        "contributors/guide/issue-triage.md#10",
+        "sig-cli/CONTRIBUTING.md#5",
+        "sig-cloud-provider/CONTRIBUTING.md#3",
+        "contributors/guide/issue-triage.md#9"
+      ]
+    },
+    {
+      "id": "q02",
+      "query": "What do the lgtm and approved labels mean?",
+      "rank": 4,
+      "found_ids": [
+        "sig-node/sig-node-contributor-ladder.md#3",
+        "sig-node/annual-report-2021.md#7",
+        "sig-storage/annual-report-2021.md#3",
+        "contributors/guide/owners.md#6",
+        "contributors/guide/pull-requests.md#34",
+        "sig-node/annual-report-2020.md#7",
+        "sig-etcd/annual-report-2023.md#3",
+        "sig-ui/annual-report-2024.md#1",
+        "sig-network/annual-report-2025.md#5",
+        "sig-autoscaling/annual-report-2023.md#1"
+      ]
+    },
+    {
+      "id": "q03",
+      "query": "How do I become a Kubernetes org member?",
+      "rank": 8,
+      "found_ids": [
+        "contributors/guide/README.md#1",
+        "mentoring/new-contributor-orientation/new-contributor-resources.md#0",
+        "README.md#2",
+        "sig-cli/CONTRIBUTING.md#0",
+        "communication/mailing-list-guidelines.md#3",
+        "github-management/new-membership-procedure.md#2",
+        "github-management/new-membership-procedure.md#1",
+        "community-membership.md#3",
+        "CONTRIBUTING.md#0",
+        "contributors/guide/README.md#0"
+      ]
+    },
+    {
+      "id": "q04",
+      "query": "Which SIG is responsible for networking?",
+      "rank": null,
+      "found_ids": [
+        "sig-network/charter.md#0",
+        "sig-network/annual-report-2023.md#4",
+        "governance.md#2",
+        "sig-node/charter.md#1",
+        "sig-scheduling/charter.md#1",
+        "sig-network/charter.md#1",
+        "sig-network/annual-report-2025.md#5",
+        "sig-cloud-provider/charter.md#2",
+        "sig-network/annual-report-2022.md#2",
+        "sig-network/annual-report-2023.md#0"
+      ]
+    },
+    {
+      "id": "q05",
+      "query": "My PR has been open for two weeks, who should I ping?",
+      "rank": null,
+      "found_ids": [
+        "sig-list.md#1",
+        "sig-windows/annual-report-2020.md#3",
+        "sig-list.md#5",
+        "sig-multicluster/CONTRIBUTING.md#7",
+        "sig-contributor-experience/triage-team/triage.md#3",
+        "sig-list.md#8",
+        "sig-list.md#6",
+        "sig-network/annual-report-2020.md#4",
+        "sig-list.md#7",
+        "sig-testing/README.md#1"
+      ]
+    },
+    {
+      "id": "q06",
+      "query": "How do I report a Code of Conduct violation?",
+      "rank": 3,
+      "found_ids": [
+        "communication/moderation.md#7",
+        "committee-code-of-conduct/incident-process.md#8",
+        "code-of-conduct.md#0",
+        "committee-code-of-conduct/README.md#1",
+        "committee-code-of-conduct/incident-process.md#5",
+        "committee-code-of-conduct/incident-process.md#2",
+        "committee-code-of-conduct/incident-process.md#3",
+        "committee-code-of-conduct/incident-process.md#0",
+        "committee-code-of-conduct/transparency-reports/2021-h1.md#1",
+        "committee-code-of-conduct/incident-process.md#1"
+      ]
+    },
+    {
+      "id": "q07",
+      "query": "Do I need to sign anything before my first pull request?",
+      "rank": null,
+      "found_ids": [
+        "contributors/guide/pull-requests.md#10",
+        "contributors/guide/pull-requests.md#2",
+        "contributors/guide/pull-requests.md#37",
+        "contributors/guide/pull-requests.md#1",
+        "contributors/devel/sig-release/cherry-picks.md#4",
+        "contributors/guide/pull-requests.md#15",
+        "contributors/guide/pull-requests.md#5",
+        "contributors/guide/release-notes.md#3",
+        "contributors/guide/pull-requests.md#32",
+        "contributors/guide/pull-requests.md#8"
+      ]
+    },
+    {
+      "id": "q08",
+      "query": "How do I rerun tests that failed on my PR?",
+      "rank": 1,
+      "found_ids": [
+        "contributors/devel/automation.md#1",
+        "contributors/devel/sig-testing/testing.md#6",
+        "contributors/devel/sig-testing/testing.md#7",
+        "contributors/devel/sig-testing/testing.md#9",
+        "contributors/guide/pull-requests.md#35",
+        "contributors/devel/sig-testing/e2e-tests.md#28",
+        "contributors/devel/sig-node/e2e-node-tests.md#9",
+        "contributors/guide/contributor-cheatsheet/README.md#8",
+        "contributors/devel/sig-testing/flaky-tests.md#0",
+        "contributors/devel/sig-testing/monitoring.md#3"
+      ]
+    },
+    {
+      "id": "q09",
+      "query": "Why don't tests run automatically on my pull request?",
+      "rank": 1,
+      "found_ids": [
+        "contributors/guide/pull-requests.md#35",
+        "contributors/guide/pull-requests.md#33",
+        "contributors/guide/pull-requests.md#37",
+        "contributors/guide/pull-requests.md#4",
+        "contributors/guide/pull-requests.md#5",
+        "contributors/devel/sig-testing/testing-strategy.md#2",
+        "contributors/devel/sig-testing/testing-strategy.md#3",
+        "contributors/guide/pull-requests.md#15",
+        "contributors/guide/pull-requests.md#16",
+        "contributors/devel/sig-testing/testing.md#0"
+      ]
+    },
+    {
+      "id": "q10",
+      "query": "Where should I report a security vulnerability?",
+      "rank": null,
+      "found_ids": [
+        "SECURITY.md#0",
+        "contributors/guide/contributing.md#7",
+        "contributors/guide/issue-triage.md#9",
+        "committee-code-of-conduct/incident-process.md#2",
+        "sig-cloud-provider/CONTRIBUTING.md#3",
+        "sig-security/charter.md#1",
+        "communication/sensitive-comms-guidelines.md#1",
+        "contributors/guide/security.md#11",
+        "committee-code-of-conduct/incident-process.md#8",
+        "sig-cli/CONTRIBUTING.md#4"
+      ]
+    },
+    {
+      "id": "q11",
+      "query": "How do I squash my commits before merging?",
+      "rank": 1,
+      "found_ids": [
+        "contributors/guide/contributor-cheatsheet/README.md#11",
+        "contributors/guide/github-workflow.md#6",
+        "contributors/guide/github-workflow.md#5",
+        "contributors/guide/github-workflow.md#3",
+        "contributors/guide/github-workflow.md#7",
+        "contributors/guide/pull-requests.md#17",
+        "contributors/guide/pull-requests.md#15",
+        "contributors/guide/pull-requests.md#16",
+        "contributors/guide/pull-requests.md#24",
+        "github-management/default-branch-migration.md#4"
+      ]
+    },
+    {
+      "id": "q12",
+      "query": "What should a good commit message look like?",
+      "rank": 1,
+      "found_ids": [
+        "contributors/guide/pull-requests.md#19",
+        "contributors/guide/pull-requests.md#18",
+        "contributors/guide/pull-requests.md#17",
+        "contributors/guide/pull-requests.md#22",
+        "contributors/guide/pull-requests.md#23",
+        "contributors/guide/pull-requests.md#20",
+        "contributors/guide/pull-requests.md#21",
+        "contributors/guide/pull-requests.md#24",
+        "contributors/guide/contributing.md#4",
+        "contributors/guide/pull-requests.md#25"
+      ]
+    },
+    {
+      "id": "q13",
+      "query": "What is an OWNERS file?",
+      "rank": 1,
+      "found_ids": [
+        "contributors/guide/owners.md#1",
+        "contributors/guide/owners.md#0",
+        "contributors/guide/owners.md#13",
+        "contributors/guide/owners.md#12",
+        "contributors/guide/owners.md#5",
+        "contributors/guide/owners.md#4",
+        "contributors/guide/owners.md#9",
+        "contributors/guide/owners.md#3",
+        "community-membership.md#8",
+        "contributors/guide/contributor-cheatsheet/README.md#7"
+      ]
+    },
+    {
+      "id": "q14",
+      "query": "What are the requirements to become a reviewer?",
+      "rank": 10,
+      "found_ids": [
+        "sig-architecture/api-review-process.md#9",
+        "sig-architecture/production-readiness.md#4",
+        "sig-docs/blog-subproject/role-handbooks/copy-editor.md#0",
+        "sig-architecture/api-review-process.md#8",
+        "sig-docs/blog-subproject/role-handbooks/technical-editor.md#0",
+        "communication/contributor-comms/role-handbooks/blog-coordinator.md#3",
+        "sig-scalability/processes/formal-scalability-processes.md#9",
+        "sig-node/sig-node-contributor-ladder.md#4",
+        "community-membership.md#7",
+        "community-membership.md#6"
+      ]
+    },
+    {
+      "id": "q15",
+      "query": "What is a KEP and when do I need one?",
+      "rank": null,
+      "found_ids": [
+        "contributors/chairs-and-techleads/process-workflow-guide.md#13",
+        "sig-architecture/annual-report-2021.md#6",
+        "sig-node/sig-node-kep-wrangler-program.md#0",
+        "sig-node/CONTRIBUTING.md#1",
+        "sig-architecture/README.md#4",
+        "contributors/chairs-and-techleads/process-workflow-guide.md#10",
+        "sig-release/annual-report-2021.md#1",
+        "sig-architecture/annual-report-2020.md#6",
+        "sig-multicluster/annual-report-2024.md#1",
+        "contributors/design-proposals/README.md#0"
+      ]
+    },
+    {
+      "id": "q16",
+      "query": "How do I stop my PR from being merged too early?",
+      "rank": 9,
+      "found_ids": [
+        "contributors/guide/owners.md#11",
+        "sig-scalability/block_merges.md#0",
+        "contributors/devel/sig-release/cherry-picks.md#6",
+        "contributors/devel/sig-release/release.md#1",
+        "sig-scalability/charter.md#2",
+        "contributors/devel/sig-release/release.md#9",
+        "github-management/default-branch-migration.md#4",
+        "sig-scalability/processes/formal-scalability-processes.md#4",
+        "contributors/guide/contributor-cheatsheet/README.md#6",
+        "sig-multicluster/CONTRIBUTING.md#7"
+      ]
+    },
+    {
+      "id": "q17",
+      "query": "How do I get my fix into an older Kubernetes release?",
+      "rank": null,
+      "found_ids": [
+        "contributors/guide/security.md#1",
+        "contributors/guide/platforms.md#5",
+        "sig-storage/1.3-retrospective/README.md#6",
+        "sig-storage/1.3-retrospective/README.md#7",
+        "contributors/devel/sig-node/node-declared-features.md#5",
+        "sig-release/annual-report-2023.md#1",
+        "sig-storage/1.3-retrospective/README.md#9",
+        "contributors/devel/development.md#0",
+        "sig-docs/annual-report-2025.md#1",
+        "sig-multicluster/CONTRIBUTING.md#6"
+      ]
+    },
+    {
+      "id": "q18",
+      "query": "What rules should I follow in the Kubernetes Slack?",
+      "rank": 5,
+      "found_ids": [
+        "communication/slack-guidelines.md#9",
+        "communication/slack-guidelines.md#10",
+        "communication/slack-guidelines.md#12",
+        "communication/slack-moderation.md#1",
+        "communication/slack-guidelines.md#0",
+        "communication/slack-guidelines.md#11",
+        "contributors/guide/contributing.md#0",
+        "communication/slack-guidelines.md#1",
+        "communication/slack-guidelines.md#4",
+        "communication/moderation.md#3"
+      ]
+    },
+    {
+      "id": "q19",
+      "query": "Are there mentoring programs for new contributors?",
+      "rank": null,
+      "found_ids": [
+        "mentoring/README.md#1",
+        "mentoring/programs/group-mentee-guide.md#3",
+        "mentoring/programs/README.md#0",
+        "mentoring/programs/group-mentoring.md#0",
+        "mentoring/programs/contributor-workshop/live-workshop/contributor-paths.md#0",
+        "sig-contributor-experience/annual-report-2020.md#3",
+        "mentoring/README.md#0",
+        "mentoring/processes/mentor-guide.md#0",
+        "mentoring/programs/group-mentoring.md#1",
+        "sig-apps/annual-report-2020.md#2"
+      ]
+    },
+    {
+      "id": "q20",
+      "query": "How do I label an issue as a bug?",
+      "rank": null,
+      "found_ids": [
+        "contributors/guide/issue-triage.md#10",
+        "sig-multicluster/CONTRIBUTING.md#2",
+        "contributors/guide/issue-triage.md#16",
+        "contributors/guide/contributing.md#7",
+        "contributors/guide/issue-triage.md#9",
+        "contributors/guide/contributor-cheatsheet/README.md#4",
+        "sig-contributor-experience/triage-team/triage.md#2",
+        "contributors/guide/help-wanted.md#3",
+        "contributors/guide/issue-triage.md#11",
+        "sig-contributor-experience/triage-team/triage.md#1"
+      ]
+    }
+  ]
+}

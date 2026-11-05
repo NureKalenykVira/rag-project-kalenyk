@@ -23,6 +23,7 @@ MD_IMAGES = re.compile(r"!\[[^\]]*\]\([^)]*\)")
 MD_LINKS = re.compile(r"\[([^\]]+)\]\([^)]*\)")
 MD_LINK_DEFS = re.compile(r"^\s*\[[^\]]+\]:\s*\S+.*$", re.MULTILINE)
 FRONT_MATTER = re.compile(r"\A---\n.*?\n---\n", re.DOTALL)
+FRONT_MATTER_TITLE = re.compile(r"^title:\s*[\"']?(.+?)[\"']?\s*$", re.MULTILINE)
 MD_REF_LINKS = re.compile(r"\[([^\]]+)\]\[[^\]]*\]")
 # Shortcut links like [Slack]; not code like args[0]
 MD_SHORT_LINKS = re.compile(r"(?<![\w\]])\[([A-Za-z][^\]\[]*)\](?![(\[:])")
@@ -58,9 +59,18 @@ def clean_text(text):
     return text.strip()
 
 
-def get_title(text, doc_id):
+def get_title(raw_text, text, doc_id):
+    front_matter = FRONT_MATTER.match(raw_text)
+    if front_matter:
+        found = FRONT_MATTER_TITLE.search(front_matter.group())
+        if found:
+            return found.group(1)
+
+    in_code = False
     for line in text.splitlines():
-        if line.startswith("# "):
+        if line.startswith("```"):
+            in_code = not in_code
+        elif not in_code and line.startswith("# "):
             return line[2:].strip()
     return doc_id
 
@@ -96,7 +106,7 @@ def main():
         chars_after += len(text)
         docs.append({
             "doc_id": doc_id,
-            "title": get_title(text, doc_id),
+            "title": get_title(raw_text, text, doc_id),
             "text": text,
             "n_chars": len(text),
         })

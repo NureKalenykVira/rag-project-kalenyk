@@ -17,3 +17,19 @@ chunking:
   output_path: data/processed/chunks.jsonl
   chunk_size: 200
   overlap: 30
+
+embedding:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  chunks_path: data/processed/chunks.jsonl
+  output_dir: data/embeddings
+  batch_size: 64
+  max_seq_length: 256
+  add_title: true
+
+index:
+  chunks_path: data/processed/chunks.jsonl
+  embeddings_dir: data/embeddings
+  path: data/index/chroma
+  collection: k8s_community
+  space: cosine
+  ef_search: 100
