@@ -1,0 +1,320 @@
+{
+  "summary": {
+    "simple": {
+      "queries": 20,
+      "recall@5": 0.65,
+      "valid_citations": 1.0,
+      "false_refusals": 0.05,
+      "cited_relevant": 0.63
+    },
+    "complex": {
+      "queries": 7,
+      "recall@5": 0.71,
+      "valid_citations": 0.86,
+      "false_refusals": 0.0,
+      "cited_relevant": 0.71
+    },
+    "all": {
+      "queries": 27,
+      "recall@5": 0.67,
+      "valid_citations": 0.96,
+      "false_refusals": 0.04,
+      "cited_relevant": 0.65
+    },
+    "negative": {
+      "queries": 5,
+      "correct_refusals": 0.8
+    },
+    "avg_time_s": 64.2
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 88.4,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q02",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 54.199999999999996,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q03",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 86.6,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q04",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 38.099999999999994,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q05",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 40.6,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q06",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 49.0,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q07",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 43.3,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q08",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 48.900000000000006,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q09",
+      "type": "simple",
+      "status": "refusal",
+      "attempts": 1,
+      "time_s": 42.4,
+      "recall5": true,
+      "cited_relevant": false
+    },
+    {
+      "id": "q10",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 40.6,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q11",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 80.0,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q12",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 66.3,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q13",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 63.9,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q14",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 72.60000000000001,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q15",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 58.0,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q16",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 84.3,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q17",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 93.69999999999999,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q18",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 80.2,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q19",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 38.9,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q20",
+      "type": "simple",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 56.3,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q21",
+      "type": "complex",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 90.9,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q22",
+      "type": "complex",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 71.8,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q23",
+      "type": "complex",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 77.39999999999999,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q24",
+      "type": "complex",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 69.5,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q25",
+      "type": "complex",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 65.0,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q26",
+      "type": "complex",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 63.599999999999994,
+      "recall5": true,
+      "cited_relevant": true
+    },
+    {
+      "id": "q27",
+      "type": "complex",
+      "status": "uncertain",
+      "attempts": 2,
+      "time_s": 98.9,
+      "recall5": false,
+      "cited_relevant": false
+    },
+    {
+      "id": "q28",
+      "type": "negative",
+      "status": "refusal",
+      "attempts": 1,
+      "time_s": 51.6,
+      "recall5": null,
+      "cited_relevant": null
+    },
+    {
+      "id": "q29",
+      "type": "negative",
+      "status": "refusal",
+      "attempts": 1,
+      "time_s": 45.199999999999996,
+      "recall5": null,
+      "cited_relevant": null
+    },
+    {
+      "id": "q30",
+      "type": "negative",
+      "status": "refusal",
+      "attempts": 1,
+      "time_s": 57.0,
+      "recall5": null,
+      "cited_relevant": null
+    },
+    {
+      "id": "q31",
+      "type": "negative",
+      "status": "ok",
+      "attempts": 1,
+      "time_s": 87.89999999999999,
+      "recall5": null,
+      "cited_relevant": null
+    },
+    {
+      "id": "q32",
+      "type": "negative",
+      "status": "refusal",
+      "attempts": 1,
+      "time_s": 49.3,
+      "recall5": null,
+      "cited_relevant": null
+    }
+  ]
+}

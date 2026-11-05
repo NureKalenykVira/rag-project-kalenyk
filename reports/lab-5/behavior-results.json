@@ -1,0 +1,603 @@
+{
+  "Do I need to sign a CLA before my first pull request?": {
+    "question": "Do I need to sign a CLA before my first pull request?",
+    "answer": "Yes, you need to sign the CLA before your first pull request. [2][4]",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 2,
+        "chunk_id": "CLA.md#0",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 4.764
+      },
+      {
+        "number": 4,
+        "chunk_id": "CLA.md#2",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 2.771
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/pull-requests.md#2",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 5.753
+      },
+      {
+        "number": 2,
+        "chunk_id": "CLA.md#0",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 4.764
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/pull-requests.md#37",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 3.075
+      },
+      {
+        "number": 4,
+        "chunk_id": "CLA.md#2",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 2.771
+      },
+      {
+        "number": 5,
+        "chunk_id": "contributors/guide/README.md#1",
+        "doc_id": "contributors/guide/README.md",
+        "title": "Getting Started",
+        "score": 1.615
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 2.7,
+    "generation_s": 62.1
+  },
+  "How do I rerun failed tests on my pull request?": {
+    "question": "How do I rerun failed tests on my pull request?",
+    "answer": "To rerun failed tests on your pull request, you can use the `/retest` command. For example, if an e2e test failed, you can comment `/retest` on your pull request to rerun all failed tests [1][3].",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/pull-requests.md#33",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 8.913
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/contributor-cheatsheet/README.md#8",
+        "doc_id": "contributors/guide/contributor-cheatsheet/README.md",
+        "title": "Contributor Cheatsheet",
+        "score": 6.69
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/pull-requests.md#33",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 8.913
+      },
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/pull-requests.md#4",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 6.79
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/contributor-cheatsheet/README.md#8",
+        "doc_id": "contributors/guide/contributor-cheatsheet/README.md",
+        "title": "Contributor Cheatsheet",
+        "score": 6.69
+      },
+      {
+        "number": 4,
+        "chunk_id": "contributors/devel/sig-testing/monitoring.md#3",
+        "doc_id": "contributors/devel/sig-testing/monitoring.md",
+        "title": "Monitoring Kubernetes Health",
+        "score": 4.957
+      },
+      {
+        "number": 5,
+        "chunk_id": "contributors/devel/sig-node/e2e-node-tests.md#9",
+        "doc_id": "contributors/devel/sig-node/e2e-node-tests.md",
+        "title": "Node End-To-End (e2e) tests",
+        "score": 4.593
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 2.5,
+    "generation_s": 47.6
+  },
+  "How do I stop my PR from being merged too early?": {
+    "question": "How do I stop my PR from being merged too early?",
+    "answer": "To prevent your PR from being merged too early, ensure you follow these steps:\n\n- Reference any issues related to your PR, or issues that your PR may solve. [1]\n- Avoid creating overly large changes in a single commit. Instead, break your PR into multiple small, logical commits. This makes it easier for your PR to be reviewed. [1]\n- Comment on your own PR where you believe something may need further explanation. [1]\n- Be selective when assigning your PR with `/assign @<username>`. Assigning excessive reviewers will not yield a quicker PR review. [1]\n- If your PR is considered a \"Work in progress\" prefix the name with `WIP` or use the `/hold` command. This will prevent the PR from being merged till the `WIP` or hold is lifted. [1]",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/contributor-cheatsheet/README.md#6",
+        "doc_id": "contributors/guide/contributor-cheatsheet/README.md",
+        "title": "Contributor Cheatsheet",
+        "score": 5.177
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/contributor-cheatsheet/README.md#6",
+        "doc_id": "contributors/guide/contributor-cheatsheet/README.md",
+        "title": "Contributor Cheatsheet",
+        "score": 5.177
+      },
+      {
+        "number": 2,
+        "chunk_id": "sig-scalability/charter.md#2",
+        "doc_id": "sig-scalability/charter.md",
+        "title": "SIG Scalability Charter",
+        "score": 5.134
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/pull-requests.md#24",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 4.905
+      },
+      {
+        "number": 4,
+        "chunk_id": "sig-scalability/block_merges.md#1",
+        "doc_id": "sig-scalability/block_merges.md",
+        "title": "Blocking PR merges in the event of regression.",
+        "score": 4.033
+      },
+      {
+        "number": 5,
+        "chunk_id": "sig-scalability/block_merges.md#0",
+        "doc_id": "sig-scalability/block_merges.md",
+        "title": "Blocking PR merges in the event of regression.",
+        "score": 2.371
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 2.2,
+    "generation_s": 71.7
+  },
+  "How can I prevent my pull request from being merged before it is ready?": {
+    "question": "How can I prevent my pull request from being merged before it is ready?",
+    "answer": "To prevent your pull request from being merged before it is ready, you can:\n\n- Add the `/hold` comment command [1].\n- Add a `WIP` (Work In Progress) prefix to your pull request title [1].",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/pull-requests.md#2",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 6.555
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/pull-requests.md#2",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 6.555
+      },
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/pull-requests.md#24",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 4.873
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/devel/automation.md#0",
+        "doc_id": "contributors/devel/automation.md",
+        "title": "Kubernetes Development Automation",
+        "score": 4.832
+      },
+      {
+        "number": 4,
+        "chunk_id": "wg-node-lifecycle/charter.md#5",
+        "doc_id": "wg-node-lifecycle/charter.md",
+        "title": "WG Node Lifecycle Charter",
+        "score": -9.674
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 1.3,
+    "generation_s": 31.6
+  },
+  "How do I squash my commits?": {
+    "question": "How do I squash my commits?",
+    "answer": "To squash your commits, follow these steps:\n\n1. Start an interactive rebase:\n   ```\n   git rebase -i HEAD~3\n   ```\n   [2][3]\n\n2. In the interactive rebase interface, mark the commits you want to keep as `pick` and the ones you want to squash as `squash` or `s`. [2][3]\n\n3. Save and close the editor. Git will then combine the marked commits into a single commit. [2][3]\n\n4. Force push your branch to update the remote repository:\n   ```\n   git push --force\n   ```\n   [2][3]",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/contributor-cheatsheet/README.md#11",
+        "doc_id": "contributors/guide/contributor-cheatsheet/README.md",
+        "title": "Contributor Cheatsheet",
+        "score": 5.662
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/github-workflow.md#3",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 5.118
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/github-workflow.md#6",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 6.488
+      },
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/contributor-cheatsheet/README.md#11",
+        "doc_id": "contributors/guide/contributor-cheatsheet/README.md",
+        "title": "Contributor Cheatsheet",
+        "score": 5.662
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/github-workflow.md#3",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 5.118
+      },
+      {
+        "number": 4,
+        "chunk_id": "contributors/guide/pull-requests.md#16",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 4.966
+      },
+      {
+        "number": 5,
+        "chunk_id": "contributors/guide/pull-requests.md#15",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 4.125
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 1.3,
+    "generation_s": 58.7
+  },
+  "How can I combine several commits into one before merging?": {
+    "question": "How can I combine several commits into one before merging?",
+    "answer": "To combine several commits into one before merging, you should squash your commits. This can be done by performing an interactive rebase [1]. Here’s how:\n\n1. Check your git branch:\n   ```\n   git status\n   ```\n\n2. Start an interactive rebase:\n   ```\n   git rebase -i HEAD~N\n   ```\n   Replace `N` with the number of commits you want to squash.\n\nBy squashing, you can create a single commit that represents a logical change, making the PR easier to review [1][2].",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/github-workflow.md#3",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 3.011
+      },
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/github-workflow.md#6",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 2.936
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "contributors/guide/github-workflow.md#3",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 3.011
+      },
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/github-workflow.md#6",
+        "doc_id": "contributors/guide/github-workflow.md",
+        "title": "GitHub Workflow",
+        "score": 2.936
+      },
+      {
+        "number": 3,
+        "chunk_id": "contributors/guide/pull-requests.md#17",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 1.006
+      },
+      {
+        "number": 4,
+        "chunk_id": "contributors/guide/pull-requests.md#2",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": -0.308
+      },
+      {
+        "number": 5,
+        "chunk_id": "contributors/devel/sig-architecture/vendor.md#5",
+        "doc_id": "contributors/devel/sig-architecture/vendor.md",
+        "title": "Using go modules to manage dependencies",
+        "score": -5.372
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 1.8,
+    "generation_s": 60.2
+  },
+  "How do I sign the CLA?": {
+    "question": "How do I sign the CLA?",
+    "answer": "To sign the CLA, follow these steps:\n\n1. After creating your first Pull Request, the linux-foundation-easycla bot will respond with information regarding your CLA status along with a link to sign the CLA. [2]\n\n2. If you are signing up as a corporate contributor, ensure that you have linked your corporate email address to your GitHub profile. [2]\n\n3. Click on the **Please click here to be authorized** link to navigate to the GitHub Authorize Linux Foundation: EasyCLA page. [1]\n\n4. Then click **Authorize LF-Engineering** to give the Linux Foundation read-only access to list the email addresses associated with your GitHub account. [1]\n\n5. Select the most appropriate contributor type: Individual Contributor or Corporate Contributor. [1]\n\n6. Follow the instructions to complete the signing process through DocuSign. [1]",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "CLA.md#1",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 5.535
+      },
+      {
+        "number": 2,
+        "chunk_id": "CLA.md#0",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 5.522
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "CLA.md#1",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 5.535
+      },
+      {
+        "number": 2,
+        "chunk_id": "CLA.md#0",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": 5.522
+      },
+      {
+        "number": 3,
+        "chunk_id": "github-management/setting-up-cla-check.md#0",
+        "doc_id": "github-management/setting-up-cla-check.md",
+        "title": "Setting up the CNCF CLA check",
+        "score": 4.293
+      },
+      {
+        "number": 4,
+        "chunk_id": "contributors/guide/pull-requests.md#2",
+        "doc_id": "contributors/guide/pull-requests.md",
+        "title": "Pull Request Process",
+        "score": 2.671
+      },
+      {
+        "number": 5,
+        "chunk_id": "mentoring/programs/contributor-workshop/live-workshop/new-contributor-workshop-lead.md#2",
+        "doc_id": "mentoring/programs/contributor-workshop/live-workshop/new-contributor-workshop-lead.md",
+        "title": "New Contributor Workshop Lead",
+        "score": 2.374
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 1.8,
+    "generation_s": 80.5
+  },
+  "How do I sign a lease for an apartment in Kyiv?": {
+    "question": "How do I sign a lease for an apartment in Kyiv?",
+    "answer": "I don't have enough information in the Kubernetes community documentation to answer this.",
+    "status": "refusal",
+    "attempts": 1,
+    "advice": "You can ask in the #kubernetes-contributors channel on the Kubernetes Slack or on the dev@kubernetes.io mailing list.",
+    "citations": [],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "CLA.md#0",
+        "doc_id": "CLA.md",
+        "title": "The Contributor License Agreement",
+        "score": -11.059
+      },
+      {
+        "number": 2,
+        "chunk_id": "contributors/guide/README.md#1",
+        "doc_id": "contributors/guide/README.md",
+        "title": "Getting Started",
+        "score": -11.139
+      },
+      {
+        "number": 3,
+        "chunk_id": "sig-architecture/CONTRIBUTING.md#0",
+        "doc_id": "sig-architecture/CONTRIBUTING.md",
+        "title": "Contributing to SIG Architecture",
+        "score": -11.179
+      },
+      {
+        "number": 4,
+        "chunk_id": "mentoring/programs/contributor-workshop/live-workshop/new-contributor-workshop-lead.md#2",
+        "doc_id": "mentoring/programs/contributor-workshop/live-workshop/new-contributor-workshop-lead.md",
+        "title": "New Contributor Workshop Lead",
+        "score": -11.221
+      },
+      {
+        "number": 5,
+        "chunk_id": "mentoring/programs/the1-on-1hour.md#0",
+        "doc_id": "mentoring/programs/the1-on-1hour.md",
+        "title": "mentoring/programs/the1-on-1hour.md",
+        "score": -11.237
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 2.2,
+    "generation_s": 42.9
+  },
+  "What are the requirements to become a Kubernetes org member?": {
+    "question": "What are the requirements to become a Kubernetes org member?",
+    "answer": "To become a Kubernetes org member, the following requirements must be met:\n\n- Have 2FA enabled on their GitHub account [1].\n- Join the k-dev mailing list [1].\n- List their active contributions, which should be significant enough to warrant membership [1].\n- List the active subprojects they are involved in [1].\n- Be sponsored by an existing member who meets the sponsor requirements [1][3].\n\nThe sponsor requirements include:\n\n- Being a member of the org they are attempting to sponsor for [3].\n- Having close interactions with the prospective member [3].\n- Being a reviewer or approver in at least one OWNERS file within one of the Kubernetes GitHub organizations [3].\n- Being from multiple member companies to demonstrate integration across the community [3].\n\nAdditionally, the process involves:\n\n- Opening an issue against the kubernetes/org repo and ensuring sponsors are @mentioned [3].\n- Completing every item on the checklist in the issue template [3].\n- Having sponsoring reviewers reply with a `+1` confirmation [3].\n- The request being reviewed by the Kubernetes GitHub Admin team [3].",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "github-management/new-membership-procedure.md#0",
+        "doc_id": "github-management/new-membership-procedure.md",
+        "title": "Adding a new member to a Kubernetes GitHub Org",
+        "score": 6.692
+      },
+      {
+        "number": 3,
+        "chunk_id": "community-membership.md#3",
+        "doc_id": "community-membership.md",
+        "title": "Community membership",
+        "score": 5.454
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "github-management/new-membership-procedure.md#0",
+        "doc_id": "github-management/new-membership-procedure.md",
+        "title": "Adding a new member to a Kubernetes GitHub Org",
+        "score": 6.692
+      },
+      {
+        "number": 2,
+        "chunk_id": "github-management/new-membership-procedure.md#1",
+        "doc_id": "github-management/new-membership-procedure.md",
+        "title": "Adding a new member to a Kubernetes GitHub Org",
+        "score": 6.251
+      },
+      {
+        "number": 3,
+        "chunk_id": "community-membership.md#3",
+        "doc_id": "community-membership.md",
+        "title": "Community membership",
+        "score": 5.454
+      },
+      {
+        "number": 4,
+        "chunk_id": "mentoring/programs/mentoring-lead.md#2",
+        "doc_id": "mentoring/programs/mentoring-lead.md",
+        "title": "Internship Mentoring Lead Handbook",
+        "score": 4.015
+      },
+      {
+        "number": 5,
+        "chunk_id": "community-membership.md#0",
+        "doc_id": "community-membership.md",
+        "title": "Community membership",
+        "score": 3.173
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 1.2,
+    "generation_s": 87.8
+  },
+  "What are the requirements to become a reviewer?": {
+    "question": "What are the requirements to become a reviewer?",
+    "answer": "To become a reviewer, one must:\n\n- Gain a high level of proficiency in understanding API conventions, project structure, and the underlying architecture [1].\n- Be committed to the SIG activities [2].\n- Demonstrate technical depth [2].\n- Have accumulated enough context [2].\n- Be knowledgeable about the codebase [2].\n- Be trustworthy and have established trust with the community [2].\n- Be sponsored by a subproject approver [2].\n- Have no objections from other approvers [2].\n- Have been a primary reviewer for at least 5 PRs to the codebase [4].\n- Have reviewed or merged at least 20 substantial PRs to the codebase [4].",
+    "status": "ok",
+    "attempts": 1,
+    "advice": null,
+    "citations": [
+      {
+        "number": 1,
+        "chunk_id": "sig-architecture/api-review-process.md#9",
+        "doc_id": "sig-architecture/api-review-process.md",
+        "title": "Kubernetes API Review Process",
+        "score": 5.015
+      },
+      {
+        "number": 2,
+        "chunk_id": "sig-node/sig-node-contributor-ladder.md#3",
+        "doc_id": "sig-node/sig-node-contributor-ladder.md",
+        "title": "SIG Node Contributor Ladder",
+        "score": 3.688
+      },
+      {
+        "number": 4,
+        "chunk_id": "community-membership.md#5",
+        "doc_id": "community-membership.md",
+        "title": "Community membership",
+        "score": 1.767
+      }
+    ],
+    "sources": [
+      {
+        "number": 1,
+        "chunk_id": "sig-architecture/api-review-process.md#9",
+        "doc_id": "sig-architecture/api-review-process.md",
+        "title": "Kubernetes API Review Process",
+        "score": 5.015
+      },
+      {
+        "number": 2,
+        "chunk_id": "sig-node/sig-node-contributor-ladder.md#3",
+        "doc_id": "sig-node/sig-node-contributor-ladder.md",
+        "title": "SIG Node Contributor Ladder",
+        "score": 3.688
+      },
+      {
+        "number": 3,
+        "chunk_id": "sig-architecture/production-readiness.md#4",
+        "doc_id": "sig-architecture/production-readiness.md",
+        "title": "Production Readiness Review Process",
+        "score": 3.596
+      },
+      {
+        "number": 4,
+        "chunk_id": "community-membership.md#5",
+        "doc_id": "community-membership.md",
+        "title": "Community membership",
+        "score": 1.767
+      },
+      {
+        "number": 5,
+        "chunk_id": "sig-node/sig-node-contributor-ladder.md#1",
+        "doc_id": "sig-node/sig-node-contributor-ladder.md",
+        "title": "SIG Node Contributor Ladder",
+        "score": 1.22
+      }
+    ],
+    "model": "qwen2.5:7b",
+    "retrieval_s": 1.5,
+    "generation_s": 69.5
+  }
+}

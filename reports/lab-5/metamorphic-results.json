@@ -1,0 +1,162 @@
+{
+  "recall_invariance": {
+    "agreement": 0.9,
+    "recall_original": 0.9,
+    "recall_paraphrase": 1.0,
+    "pairs": [
+      {
+        "id": "q01",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q03",
+        "original_hit": false,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q06",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q07",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q08",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q10",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q12",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q13",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q14",
+        "original_hit": true,
+        "paraphrase_hit": true
+      },
+      {
+        "id": "q18",
+        "original_hit": true,
+        "paraphrase_hit": true
+      }
+    ]
+  },
+  "retrieval_overlap": {
+    "mean_jaccard": 0.17,
+    "pairs": [
+      {
+        "id": "q01",
+        "jaccard": 0.25
+      },
+      {
+        "id": "q03",
+        "jaccard": 0.11
+      },
+      {
+        "id": "q06",
+        "jaccard": 0.0
+      },
+      {
+        "id": "q07",
+        "jaccard": 0.11
+      },
+      {
+        "id": "q08",
+        "jaccard": 0.43
+      },
+      {
+        "id": "q10",
+        "jaccard": 0.11
+      },
+      {
+        "id": "q12",
+        "jaccard": 0.25
+      },
+      {
+        "id": "q13",
+        "jaccard": 0.11
+      },
+      {
+        "id": "q14",
+        "jaccard": 0.25
+      },
+      {
+        "id": "q18",
+        "jaccard": 0.11
+      }
+    ]
+  },
+  "citation_overlap": {
+    "mean_chunk_jaccard": 0.38,
+    "mean_doc_jaccard": 0.75,
+    "pairs": [
+      {
+        "id": "q06",
+        "statuses": [
+          "ok",
+          "ok"
+        ],
+        "chunk_jaccard": 0.0,
+        "doc_jaccard": 0.5,
+        "answers": [
+          "To report a Code of Conduct violation, you can submit an incident report to the Kubernetes Code of Conduct Committee. This can be done by emailing conduct@kubernetes.io [1]. You can also reach out via Slack direct messages to individual committee members, but they might direct you to contact them via email. [1]",
+          "You should report the incident to the Kubernetes Code of Conduct Committee via <conduct@kubernetes.io> [3]. They will handle the matter according to their process [1]."
+        ]
+      },
+      {
+        "id": "q07",
+        "statuses": [
+          "ok",
+          "ok"
+        ],
+        "chunk_jaccard": 0.5,
+        "doc_jaccard": 0.5,
+        "answers": [
+          "Yes, you need to sign the Contributor License Agreement (CLA) before your first pull request. [3]",
+          "Yes, you need to sign the Contributor License Agreement (CLA) before contributing code [1][3]."
+        ]
+      },
+      {
+        "id": "q10",
+        "statuses": [
+          "ok",
+          "ok"
+        ],
+        "chunk_jaccard": 0.5,
+        "doc_jaccard": 1.0,
+        "answers": [
+          "You should report a security vulnerability through HackerOne (`https://hackerone.com/kubernetes`) or by email to `security@kubernetes.io`. [3][4]",
+          "You should contact the security team by emailing `security@kubernetes.io`. Include a reproducible proof of concept exploit code/script, symbol-level reachability evidence, or a code trace from an attacker-reachable entry point to the flaw. [1]"
+        ]
+      },
+      {
+        "id": "q13",
+        "statuses": [
+          "ok",
+          "ok"
+        ],
+        "chunk_jaccard": 0.5,
+        "doc_jaccard": 1.0,
+        "answers": [
+          "An OWNERS file is used to designate responsibility over different parts of the Kubernetes codebase [1]. It applies to everything within a directory, including the OWNERS file itself, sibling files, and child directories [1][2]. The file is in YAML format and supports keys such as `approvers`, `reviewers`, and `labels` [2]. It is used to assign roles like reviewer and approver for code reviews [1].",
+          "OWNERS files in Kubernetes repositories are used to designate responsibility over different parts of the Kubernetes codebase [1]. They assign the reviewer and approver roles for the two-phase code review process [1]."
+        ]
+      }
+    ]
+  }
+}

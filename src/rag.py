@@ -5,12 +5,30 @@ import json
 import time
 from pathlib import Path
 
-from contract import COMMUNITY_ADVICE
+from contract import BLOCKED, COMMUNITY_ADVICE, is_english, looks_like_injection
 from generate import answer_question
 from retrieval import Retriever, load_config
 
 
+def blocked_response(question, config, sources=None, retrieval_s=0.0, generation_s=0.0):
+    return {
+        "question": question,
+        "answer": BLOCKED,
+        "status": "blocked",
+        "attempts": 0 if sources is None else 1,
+        "advice": None,
+        "citations": [],
+        "sources": sources or [],
+        "model": config["model"],
+        "retrieval_s": round(retrieval_s, 1),
+        "generation_s": round(generation_s, 1),
+    }
+
+
 def run(question, retriever, config):
+    if looks_like_injection(question):
+        return blocked_response(question, config)
+
     start = time.perf_counter()
     hits = retriever.rerank_search(question, config["top_k"])
     retrieval_s = time.perf_counter() - start
@@ -22,8 +40,11 @@ def run(question, retriever, config):
     sources = [{"number": n, "chunk_id": h["chunk_id"], "doc_id": h["doc_id"],
                 "title": h["title"], "score": round(h["score"], 3)}
                for n, h in enumerate(hits, start=1)]
-    cited = [s for s in sources if s["chunk_id"] in result["cited_chunks"]]
 
+    if not is_english(result["answer"]):
+        return blocked_response(question, config, sources, retrieval_s, generation_s)
+
+    cited = [s for s in sources if s["chunk_id"] in result["cited_chunks"]]
     return {
         "question": question,
         "answer": result["answer"],
