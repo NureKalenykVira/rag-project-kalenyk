@@ -1,0 +1,56 @@
+{
+  "question": "Do I need to sign anything before my first pull request?",
+  "answer": "Yes, you need to sign the Contributor License Agreement (CLA) before your first pull request. [3]",
+  "status": "ok",
+  "attempts": 1,
+  "advice": null,
+  "citations": [
+    {
+      "number": 3,
+      "chunk_id": "CLA.md#0",
+      "doc_id": "CLA.md",
+      "title": "The Contributor License Agreement",
+      "score": 1.479
+    }
+  ],
+  "sources": [
+    {
+      "number": 1,
+      "chunk_id": "contributors/guide/pull-requests.md#2",
+      "doc_id": "contributors/guide/pull-requests.md",
+      "title": "Pull Request Process",
+      "score": 4.131
+    },
+    {
+      "number": 2,
+      "chunk_id": "contributors/guide/pull-requests.md#1",
+      "doc_id": "contributors/guide/pull-requests.md",
+      "title": "Pull Request Process",
+      "score": 2.154
+    },
+    {
+      "number": 3,
+      "chunk_id": "CLA.md#0",
+      "doc_id": "CLA.md",
+      "title": "The Contributor License Agreement",
+      "score": 1.479
+    },
+    {
+      "number": 4,
+      "chunk_id": "contributors/guide/first-contribution.md#1",
+      "doc_id": "contributors/guide/first-contribution.md",
+      "title": "Making your First Contribution",
+      "score": 1.053
+    },
+    {
+      "number": 5,
+      "chunk_id": "contributors/guide/release-notes.md#2",
+      "doc_id": "contributors/guide/release-notes.md",
+      "title": "Adding Release Notes",
+      "score": -1.59
+    }
+  ],
+  "model": "qwen2.5:7b",
+  "retrieval_s": 2.1,
+  "generation_s": 68.4
+}

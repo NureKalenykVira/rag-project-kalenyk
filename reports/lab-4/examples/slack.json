@@ -1,0 +1,70 @@
+{
+  "question": "What rules should I follow in the Kubernetes Slack?",
+  "answer": "You should follow these rules in the Kubernetes Slack:\n\n- Conversations should stay on topic in each channel [1].\n- Abide by the Code of Conduct [1].\n- Use the community inviter to join the Kubernetes Slack [1].\n- Channels must be Kubernetes-related [2].\n- Small external projects should use relevant SIG or WG channels [2].\n- Use your best judgment when requesting a channel [2].\n- Avoid using `@all`, `@here`, and `@channel` commands unless necessary [3].\n- Channels should be dedicated to SIGs, WGs, sub-projects, or community topics [2].\n- Channels should be relevant to Kubernetes programs and projects [2].\n- Two Slack admins must review and agree to sponsor a channel [3].",
+  "status": "ok",
+  "attempts": 1,
+  "advice": null,
+  "citations": [
+    {
+      "number": 1,
+      "chunk_id": "communication/slack-guidelines.md#0",
+      "doc_id": "communication/slack-guidelines.md",
+      "title": "Slack Guidelines",
+      "score": 4.972
+    },
+    {
+      "number": 2,
+      "chunk_id": "communication/slack-guidelines.md#9",
+      "doc_id": "communication/slack-guidelines.md",
+      "title": "Slack Guidelines",
+      "score": 4.968
+    },
+    {
+      "number": 3,
+      "chunk_id": "communication/slack-moderation.md#1",
+      "doc_id": "communication/slack-moderation.md",
+      "title": "Slack Moderation",
+      "score": 3.947
+    }
+  ],
+  "sources": [
+    {
+      "number": 1,
+      "chunk_id": "communication/slack-guidelines.md#0",
+      "doc_id": "communication/slack-guidelines.md",
+      "title": "Slack Guidelines",
+      "score": 4.972
+    },
+    {
+      "number": 2,
+      "chunk_id": "communication/slack-guidelines.md#9",
+      "doc_id": "communication/slack-guidelines.md",
+      "title": "Slack Guidelines",
+      "score": 4.968
+    },
+    {
+      "number": 3,
+      "chunk_id": "communication/slack-moderation.md#1",
+      "doc_id": "communication/slack-moderation.md",
+      "title": "Slack Moderation",
+      "score": 3.947
+    },
+    {
+      "number": 4,
+      "chunk_id": "communication/moderation.md#0",
+      "doc_id": "communication/moderation.md",
+      "title": "Moderation Rules and Responsibilities",
+      "score": 3.909
+    },
+    {
+      "number": 5,
+      "chunk_id": "contributors/guide/pull-requests.md#30",
+      "doc_id": "contributors/guide/pull-requests.md",
+      "title": "Pull Request Process",
+      "score": 3.861
+    }
+  ],
+  "model": "qwen2.5:7b",
+  "retrieval_s": 2.5,
+  "generation_s": 70.4
+}

@@ -1,0 +1,70 @@
+{
+  "question": "How do I become a Kubernetes org member?",
+  "answer": "To become a Kubernetes org member, you need to meet the following requirements:\n\n- Have 2FA enabled on your GitHub account [1].\n- Join the k-dev mailing list [1].\n- List your active contributions [1].\n- Ensure your contributions meet the bar for membership, as determined by sponsors [1].\n\nThe process involves:\n\n1. Opening a PR against the kubernetes/org config, adding your GitHub username to the members list [1].\n2. Using one commit per username added [1].\n3. Adding `fixes #1234, fixes #1234` in the PR body to reference the membership request issues [1].\n4. Noting in the original membership request that a membership invite will be sent once the PR merges [1].\n5. Waiting for another New Membership Coordinator or a member of the GitHub administration team to LGTM the PR for merge [1].\n\nAdditionally, becoming a member involves being responsive to issues and PRs, being an active owner of contributed code, and participating in SIG meetings and the k-dev mailing list [3][4].",
+  "status": "ok",
+  "attempts": 1,
+  "advice": null,
+  "citations": [
+    {
+      "number": 1,
+      "chunk_id": "github-management/new-membership-procedure.md#0",
+      "doc_id": "github-management/new-membership-procedure.md",
+      "title": "Adding a new member to a Kubernetes GitHub Org",
+      "score": 6.763
+    },
+    {
+      "number": 3,
+      "chunk_id": "community-membership.md#4",
+      "doc_id": "community-membership.md",
+      "title": "Community membership",
+      "score": 5.498
+    },
+    {
+      "number": 4,
+      "chunk_id": "README.md#2",
+      "doc_id": "README.md",
+      "title": "Kubernetes Community",
+      "score": 5.173
+    }
+  ],
+  "sources": [
+    {
+      "number": 1,
+      "chunk_id": "github-management/new-membership-procedure.md#0",
+      "doc_id": "github-management/new-membership-procedure.md",
+      "title": "Adding a new member to a Kubernetes GitHub Org",
+      "score": 6.763
+    },
+    {
+      "number": 2,
+      "chunk_id": "github-management/new-membership-procedure.md#3",
+      "doc_id": "github-management/new-membership-procedure.md",
+      "title": "Adding a new member to a Kubernetes GitHub Org",
+      "score": 6.645
+    },
+    {
+      "number": 3,
+      "chunk_id": "community-membership.md#4",
+      "doc_id": "community-membership.md",
+      "title": "Community membership",
+      "score": 5.498
+    },
+    {
+      "number": 4,
+      "chunk_id": "README.md#2",
+      "doc_id": "README.md",
+      "title": "Kubernetes Community",
+      "score": 5.173
+    },
+    {
+      "number": 5,
+      "chunk_id": "sig-docs/blog-subproject/role-handbooks/editorial-lead.md#1",
+      "doc_id": "sig-docs/blog-subproject/role-handbooks/editorial-lead.md",
+      "title": "Editorial Lead",
+      "score": 4.008
+    }
+  ],
+  "model": "qwen2.5:7b",
+  "retrieval_s": 1.3,
+  "generation_s": 70.6
+}

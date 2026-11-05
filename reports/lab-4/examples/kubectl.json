@@ -1,0 +1,48 @@
+{
+  "question": "How do I install kubectl on Windows?",
+  "answer": "I don't have enough information in the Kubernetes community documentation to answer this.",
+  "status": "refusal",
+  "attempts": 1,
+  "advice": "You can ask in the #kubernetes-contributors channel on the Kubernetes Slack or on the dev@kubernetes.io mailing list.",
+  "citations": [],
+  "sources": [
+    {
+      "number": 1,
+      "chunk_id": "sig-windows/CONTRIBUTING.md#2",
+      "doc_id": "sig-windows/CONTRIBUTING.md",
+      "title": "Contributing on Windows Node support",
+      "score": 6.011
+    },
+    {
+      "number": 2,
+      "chunk_id": "sig-windows/CONTRIBUTING.md#3",
+      "doc_id": "sig-windows/CONTRIBUTING.md",
+      "title": "Contributing on Windows Node support",
+      "score": 3.642
+    },
+    {
+      "number": 3,
+      "chunk_id": "contributors/devel/development.md#5",
+      "doc_id": "contributors/devel/development.md",
+      "title": "Development Guide",
+      "score": 2.618
+    },
+    {
+      "number": 4,
+      "chunk_id": "contributors/devel/running-locally.md#0",
+      "doc_id": "contributors/devel/running-locally.md",
+      "title": "contributors/devel/running-locally.md",
+      "score": 1.597
+    },
+    {
+      "number": 5,
+      "chunk_id": "contributors/devel/sig-scalability/kubemark-guide.md#9",
+      "doc_id": "contributors/devel/sig-scalability/kubemark-guide.md",
+      "title": "Kubemark User Guide",
+      "score": 0.827
+    }
+  ],
+  "model": "qwen2.5:7b",
+  "retrieval_s": 1.4,
+  "generation_s": 43.4
+}

@@ -1,0 +1,56 @@
+{
+  "question": "How do I squash my commits before merging?",
+  "answer": "To squash your commits, follow these steps:\n\n1. Check your git branch:\n   ```\n   git status\n   ```\n   [1]\n\n2. Start an interactive rebase:\n   ```\n   git rebase -i HEAD~N\n   ```\n   Replace `N` with the number of commits you want to squash. [1]\n\n3. In the interactive rebase editor, change the words \"pick\" to \"squash\" or \"s\" for commits you want to merge into the commit above it. [1]\n\n4. Save and close the editor. You will be prompted to enter a commit message for the squashed commits. [1]\n\n5. Push your changes with rebase:\n   ```\n   git push --force\n   ```\n   Be cautious with force pushing, as it can overwrite remote history. [1]",
+  "status": "ok",
+  "attempts": 1,
+  "advice": null,
+  "citations": [
+    {
+      "number": 1,
+      "chunk_id": "contributors/guide/github-workflow.md#3",
+      "doc_id": "contributors/guide/github-workflow.md",
+      "title": "GitHub Workflow",
+      "score": 6.895
+    }
+  ],
+  "sources": [
+    {
+      "number": 1,
+      "chunk_id": "contributors/guide/github-workflow.md#3",
+      "doc_id": "contributors/guide/github-workflow.md",
+      "title": "GitHub Workflow",
+      "score": 6.895
+    },
+    {
+      "number": 2,
+      "chunk_id": "contributors/guide/github-workflow.md#6",
+      "doc_id": "contributors/guide/github-workflow.md",
+      "title": "GitHub Workflow",
+      "score": 6.252
+    },
+    {
+      "number": 3,
+      "chunk_id": "contributors/guide/pull-requests.md#17",
+      "doc_id": "contributors/guide/pull-requests.md",
+      "title": "Pull Request Process",
+      "score": 4.72
+    },
+    {
+      "number": 4,
+      "chunk_id": "contributors/guide/pull-requests.md#16",
+      "doc_id": "contributors/guide/pull-requests.md",
+      "title": "Pull Request Process",
+      "score": 3.777
+    },
+    {
+      "number": 5,
+      "chunk_id": "contributors/guide/contributing.md#4",
+      "doc_id": "contributors/guide/contributing.md",
+      "title": "Contributing to Kubernetes",
+      "score": 2.107
+    }
+  ],
+  "model": "qwen2.5:7b",
+  "retrieval_s": 1.2,
+  "generation_s": 69.2
+}

@@ -3,3 +3,5 @@ data/raw/
 __pycache__/
 search-results.txt
 search-results-2.txt
+compare-dense-bm25.txt
+.pytest_cache/

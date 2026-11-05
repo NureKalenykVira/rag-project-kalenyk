@@ -33,3 +33,16 @@ index:
   collection: k8s_community
   space: cosine
   ef_search: 100
+
+retrieval:
+  rrf_k: 60
+  candidates: 50
+  reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+  rerank_candidates: 20
+  max_chunks_per_doc: 2
+
+generation:
+  model: qwen2.5:7b
+  top_k: 5
+  temperature: 0
+  num_ctx: 4096
